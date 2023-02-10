@@ -1,0 +1,123 @@
+.header {
+    padding-top: 6.4rem;
+    &__top {
+        display: flex;
+        margin-bottom: 2.9rem;
+    }
+
+    &__logo {
+        width: 108.2rem;
+        height: 6.9rem;
+        display: inline-block;
+        margin-right: 7.8rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__search {
+        width: 38.3rem;
+        display: inline-block;
+        position: relative;
+        &::before {
+            position: absolute;
+            content:'';
+            background-image: url(../img/icon/search.svg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 2.1rem;
+            height: 2.1rem;
+            top: 2rem;
+            left: 2.36rem;
+        }
+        input {
+            padding-left: 6.2rem;
+            width: 100%;
+            height: 6.2rem;
+            border: 0.2rem solid #3F4C5C;
+            border-radius: 0.8rem;
+            background: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 136%;
+        }
+    }
+
+    &__center {
+        margin-bottom: 3.4rem;
+    }
+
+
+    &__center-lists {
+        display: flex;
+
+        li {
+            cursor: pointer;
+            margin-right: 0.3rem;
+            display: inline-block;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 38.3rem;
+                height: 6.5rem;
+                background: #3F4C5C;
+                text-align: center;
+                border-radius: 0.8rem;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.9rem;
+                text-transform: uppercase;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+        }
+
+        li:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+
+    &__bottom-lists {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            cursor: pointer;
+            margin-right: 0.3rem;
+            display: block;
+            margin-bottom: 0.3rem;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 38.3rem;
+                height: 7rem;
+                background: #FFFFFF;
+                text-align: center;
+                border-radius: 0.8rem;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 111.4%;
+                text-align: center;
+                color: #323439;
+                padding: 1rem;
+            }
+
+        }
+
+        li:nth-child(-n + 4n) {
+            margin-bottom: 0;
+        }
+
+        li:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+}
