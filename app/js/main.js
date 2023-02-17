@@ -52,3 +52,33 @@ const partnersSlider = new Swiper('#partners__swiper', {
     },
    
 });
+
+
+
+const recordSlider = new Swiper('.record__swiper', {
+  slidesPerView: 1,
+  speed: 500,
+  wrapperClass: 'record__swiper-wrapper',
+  slideClass: 'record__slide',
+  freeMode: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: true,
+  autoplay: {
+      delay: 4000,
+  },
+  pagination: {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `
+        <span class="${className}">
+         
+        </span>
+      `;
+    },
+    el: '.record__bullets',
+  },
+ 
+});

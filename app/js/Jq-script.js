@@ -72,6 +72,19 @@ $(".schedule__block").each(function() {
         
     
 });
+
+
+$('.hospitalization__item').click(function() {
+    var id = $(this).attr('data-tab'),
+        content = $('.hospitalization__content[data-tab="'+ id +'"]');
+    
+    $('.hospitalization__item.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+    
+    $('.hospitalization__content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
    
    
 });

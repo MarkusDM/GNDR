@@ -1,0 +1,119 @@
+.record {
+    margin-top: 5.8rem;
+    padding-bottom: 15rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        width: 70rem;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 112%;
+        font-variant: small-caps;
+        color: #323439;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 136%;
+        color: rgba(63, 76, 92, 0.69);
+        margin-bottom: 3.5rem;
+
+        a {
+            color:#00AC60;
+        }
+        p {
+            margin-bottom: 1.4rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    &__form {
+        input {
+            font-family: 'Circe';
+            width: 69.9rem;
+            height: 6rem;
+            background: #D8DEE8;
+            border-radius: 0.8rem;
+            display: block;
+            margin-bottom: 1.5rem;
+            border: none;
+            padding-left: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 136%;
+            color: rgba(63, 76, 92, 0.62);
+        }
+
+
+
+
+        input:last-child {
+            margin-bottom: 0;
+        }
+
+
+        textarea {
+            border: none;
+            width: 69.9rem;
+            min-height: 12.6rem;
+            background: #D8DEE8;
+            border-radius: 0.8rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: rgba(63, 76, 92, 0.74);
+            resize: none;
+            padding-top: 1.8rem;
+            padding-left: 1.8rem;
+            margin-bottom: 3.5rem;
+        }
+
+       .all-btn {
+        width: 41.2rem;
+       }
+    }
+
+    &__form-captcha {
+        width: 41.2rem;
+        height: 10.3rem;
+        display: block;
+        margin-bottom: 3.7rem;
+    }
+
+    &__slide-image {
+
+    }
+
+    &__swiper {
+        overflow: hidden;
+        width: 65.9rem;
+        position: relative;
+    }
+
+    &__pagination {
+        position: absolute;
+        z-index: 2;
+        bottom: 10.6rem;
+        left: 44%;
+    }
+
+
+}
